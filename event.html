@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 event</title>
+</head>
+<script>
+    function numbering(n){
+        for(let i = 0; i < n; i++){ //i가 5보다 작을 경우 실행
+           alert(i) // console.log(i)
+        }
+    }
+    function red(){ // input 가져와서 style 적용
+        let btn = document.querySelector("input")
+        btn.style.backgroundColor = "red"
+    }
+</script>
+<body>
+    <!-- <input type="button" value="click" onclick="numbering(5)"> -->
+    <!-- <input type="button" value="버튼" onclick="red()"> -->
+    <!-- <input type="button" value="버튼">
+    <script>
+        let btn2 = document.querySelector("input") //input 클릭하면 이벤트 실행
+        btn2.addEventListener("click",
+            function(e){
+                alert("clicked!")
+            }
+        )
+    </script> -->
+    <script src="event.js"></script>
+    <input/>
+    <p onClick="hi()">click here</p>
+    
+</body>
+</html>
