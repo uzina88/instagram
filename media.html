@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (max-width:600px){ /* 600 미만(599) */
+            p{background-color: pink;}
+            img{display: none;}
+        }
+        @media (min-width:600px){ /* 600 이상일때(600~) */
+            p{background-color: skyblue;}
+            img{display: block;}
+        }
+    </style>
+    <script>
+        console.log("test")
+        alert("오늘 기분은 어떠신가요?")
+    </script>
+</head>
+<body>
+    <p>화면에 어떻게 표시되나요?</p>
+    <img src="./image/profile.jpg" alt="">
+</body>
+</html>

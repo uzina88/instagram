@@ -1,77 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <style>
-       
-    </style>
-</head>
-<body>
-    <div>
-        <img src="./image/logo.png" alt="">
-    </div>
-    <div id="profile">
-        <img src="./image/profile.jpg" alt="" width="50px">
-        <div>
-            <h2>half_bottle<br/></h2>
-            <button>프로필 편집</button>
-        </div>
-    </div>
-    <div>
-        <p>
-            <strong>
-                반병현 (Byunghyun Ban)<br/>
-            </strong>
-            작가<br/>
-        </p>
-        <p>
-            <a href="https://needleworm.github.io">needleworm.github.io</a>
-        </p>
-    </div>
-    <div>
-        <div class="highlight">
-            <img src="./image/hl 1.jpg" alt="" height="35px">
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet"/>
+        <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="top">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
+            <input type="search" value="🔍검색"/>
             <div>
-                😎
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
             </div>
         </div>
-        <div class="highlight">
-            <img src="./image/hl 2.jpg" alt="" height="35px">
-            <div>
-                😘
+        <div id="profile">
+            <div id="profile_pic">
+                <img class="circle_pic" src="image/profile.jpg"/>
+            </div>
+            <div id="profile_info">
+                <div id="id">
+                    <span>half_bottle</span>
+                    <i class="fas fa-cog"></i>
+                </div>
+                <button>프로필 편집</button>
             </div>
         </div>
-    </div>
-    <div>
         <div>
-            <div>
+            <p>
+                <strong id="userInfo">반병현 (Byunghyun Ban)</strong><br/>
+                <span id="summary">작가</span>
+            </p>
+            <p id="profileDetail">
+                <a href="https://needleworm.github.io">
+                    needleworm.github.io
+                </a>
+            </p>
+        </div>
+        <div id="highlight_area">
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img class="circle_pic" src="image/hl 1.jpg"/>
+                </div>
+                <div>
+                    😎
+                </div>
+            </div>
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img class="circle_pic" src="image/hl 2.jpg"/>
+                </div>
+                <div>
+                    🥰
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div id="stat_bar">
+            <div class="stat">
                 게시물<br/>
                 133
             </div>
-            <div> 
+            <div class="stat">
                 팔로워<br/>
                 408
             </div>
-            <div>
+            <div class="stat">
                 팔로우<br/>
                 189
             </div>
         </div>
-    </div>
-    <div>아이콘이 들어갈 자리</div>
-    <div>
-        <img src="./image/thumbnails/1.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/2.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/3.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/4.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/5.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/6.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/7.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/8.jpg" alt="" width="32%">
-        <img src="./image/thumbnails/9.jpg" alt="" width="32%">
-    </div>
-</body>
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fas fa-border-all"></i>
+            </div>
+            <div><i class="fas fa-film"></i></div>
+            <div><i class="far fa-play-circle"></i></div>
+            <div><i class="far fa-bookmark"></i></div>
+            <div><i class="fas fa-user-tag"></i></div>
+        </div>
+        <div>
+            <div class="thumnail_grid">
+                <img src="./image/thumbnails/1.jpg" class="thumnail"/>
+                <img src="./image/thumbnails/2.jpg" class="thumnail"/>
+                <img src="./image/thumbnails/3.jpg" class="thumnail"/>                
+            </div>
+            <div class="thumnail_grid">
+                <img src="./image/thumbnails/4.jpg" class="thumnail"/>
+                <img src="./image/thumbnails/5.jpg" class="thumnail"/>
+                <img src="./image/thumbnails/6.jpg" class="thumnail"/>
+            </div>
+            <div class="thumnail_grid">
+                <img src="./image/thumbnails/7.jpg" class="thumnail"/>
+                <img src="./image/thumbnails/8.jpg" class="thumnail"/>
+                <img src="./image/thumbnails/9.jpg" class="thumnail"/>
+            </div>
+        </div>
+    </body>
 </html>
