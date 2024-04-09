@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <strong>이름<span id="nameHere">None</span></strong>
+        <input type="button" value="수정" id="nameEditButton" >
+    </div>
+    <div id="editNameField" style="display: none;">
+        <input type="text" value="새 이름 입력" id="newName">
+        <input type="button" value="확인" id="okButton">
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded",
+            function(e){
+                let nameEditButton = document.querySelector("#nameEditButton")      
+                let editName = document.querySelector("#editNameField")      
+                let okButton = document.querySelector("#okButton")      
+                let newName = document.querySelector("#newName")      
+                let nameHere = document.querySelector("#nameHere")      
+
+                nameEditButton.addEventListener("click",
+                    function(e){
+                        editName.style.display ="block" //입력창이 버튼 보이게
+                        nameEditButton.style.display ="none" //수정버튼 안보이게
+                    }
+                )
+                okButton.addEventListener("click",
+                    function(e){
+                        nameHere.textContent = newName.value //span태그안에 value 들어감
+                        editName.style.display = "none" // 입력창이 안보이게
+                        nameEditButton.style.display ="inline" //수정버튼이 다시 살아남 
+                        nameEditButton.style.color ="red" //수정버튼 컬러 변경 
+                    }
+                )
+            }
+        
+        
+        
+        )
+    </script>
+</body>
+</html>
